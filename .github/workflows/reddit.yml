@@ -11,6 +11,7 @@ jobs:
         subreddit:
           - javascript
           - rails
+          - testingorbit
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
