@@ -10,6 +10,7 @@ jobs:
       matrix:
         subreddit:
           - javascript
+          - ruby
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
