@@ -10,13 +10,12 @@ jobs:
       matrix:
         subreddit:
           - javascript
-          - rails
     steps:
       - uses: actions/checkout@v2
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '15'
       - run: npx @orbit-love/reddit --posts --comments --hours=24 --subreddit "${{ matrix.subreddit }}"
         name: 'Get Posts & Add to Orbit'
         env:
